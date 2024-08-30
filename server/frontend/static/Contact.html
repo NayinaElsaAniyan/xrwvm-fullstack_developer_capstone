@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        body {
+            background-color: white; /* Light background color */
+            margin: 0; /* Remove default margin */
+        }
+        .navbar {
+            background-color: #0C9; /* Navbar color */
+            padding: 15px; /* Navbar padding */
+        }
+        .section {
+            flex: 1; /* Allow sections to grow and fill space */
+            padding: 20px; /* Padding for sections */
+            box-sizing: border-box; /* Include padding in width */
+            background-color: #ffffff; /* Background color for sections */
+            margin: 5px; /* Margin between sections */
+        }
+        .contact-container {
+            display: flex; /* Flexbox for horizontal layout */
+            height: calc(100vh - 56px); /* Full height minus navbar height */
+        }
+        .btn-green:hover {
+            background-color: darkgreen; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%; color: white;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger; color: white;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger; color: white;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger; color: white;" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="section">
+            <h1>Contact Information</h1>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+            <h3>Get in Touch</h3>
+            <p><strong>Email:</strong> support@example.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Address:</strong> 1234 Best Cars St, Car City, CA 90210</p>
+        </div>
+
+        <div class="section">
+            <h1>Contact Form</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-green">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
